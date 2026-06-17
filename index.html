@@ -61,20 +61,31 @@
       box-shadow: 0 8px 20px rgba(34,197,94,0.3);
     }
 
-    .hero {
-      min-height: 660px;
-      background:
-        linear-gradient(90deg, rgba(6,22,45,0.98) 0%, rgba(6,22,45,0.92) 34%, rgba(6,22,45,0.20) 65%, rgba(6,22,45,0.03) 100%),
-        url("imagen de laptop para fondo de la parte superior.png");
-      background-size: cover;
-      background-position: center right;
-      background-repeat: no-repeat;
-      padding: 75px 5%;
-      color: white;
-      display: flex;
-      align-items: center;
-    }
+.hero{
 
+    min-height:700px;
+
+    background-image:
+    linear-gradient(
+        90deg,
+        rgba(6,22,45,.98) 0%,
+        rgba(6,22,45,.94) 38%,
+        rgba(6,22,45,.35) 65%,
+        rgba(6,22,45,.05) 100%
+    ),
+    url("imagen de laptop para fondo de la parte superior.png");
+
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+
+    background-color:#06162d;
+
+    display:flex;
+    align-items:center;
+
+    padding:80px 5%;
+}
     .hero-content {
       max-width: 560px;
     }
