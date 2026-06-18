@@ -90,14 +90,15 @@
       z-index: 2;
     }
 
-.hero-image {
-  flex: 1.25;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  border-radius: 0;
+.hero-image{
+
+    flex:1.25;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+
 }
 
 .hero-image::before {
@@ -116,6 +117,30 @@
     width:100%;
     max-width:950px;
     height:auto;
+    display:block;
+
+    filter:
+        drop-shadow(0 25px 45px rgba(0,0,0,.35));
+
+    mask-image:
+        radial-gradient(
+            ellipse 95% 90% at center,
+            #000 68%,
+            rgba(0,0,0,.95) 76%,
+            rgba(0,0,0,.55) 88%,
+            transparent 100%
+        );
+
+    -webkit-mask-image:
+        radial-gradient(
+            ellipse 95% 90% at center,
+            #000 68%,
+            rgba(0,0,0,.95) 76%,
+            rgba(0,0,0,.55) 88%,
+            transparent 100%
+        );
+
+}
     display:block;
 
     filter: drop-shadow(0 25px 50px rgba(0,0,0,.35));
