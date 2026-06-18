@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RTV Laptops | Diagnóstico Experto</title>
 
   <style>
@@ -18,8 +18,9 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #ffffff;
       color: #07152f;
+      background: #ffffff;
+      overflow-x: hidden;
     }
 
     a {
@@ -27,136 +28,65 @@
     }
 
     .header {
+      height: 95px;
       background: #06162d;
-      padding: 16px 5%;
+      padding: 0 5%;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
     }
 
     .logo {
-      width: 135px;
+      width: 120px;
       height: auto;
-      object-fit: contain;
+      display: block;
     }
 
     .nav {
       display: flex;
-      gap: 30px;
+      gap: 32px;
       align-items: center;
     }
 
     .nav a {
-      color: white;
-      font-weight: 700;
+      color: #ffffff;
       font-size: 15px;
+      font-weight: 700;
     }
 
     .btn-whatsapp {
       background: #22c55e;
-      color: white;
-      padding: 16px 28px;
+      color: #ffffff;
+      padding: 15px 28px;
       border-radius: 12px;
       font-weight: 800;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      box-shadow: 0 8px 20px rgba(34,197,94,0.3);
+      box-shadow: 0 10px 25px rgba(34,197,94,.35);
     }
 
     .hero {
-      min-height: 700px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 50px;
-      padding: 70px 5%;
+      min-height: 720px;
       background: linear-gradient(
         90deg,
         #06162d 0%,
-        #06162d 42%,
-        #7f8791 72%,
-        #e8eaed 100%
+        #06162d 43%,
+        #69727d 70%,
+        #e4e7eb 100%
       );
+      display: grid;
+      grid-template-columns: 42% 58%;
+      align-items: center;
+      padding: 60px 5%;
       overflow: hidden;
     }
 
     .hero-content {
-      flex: 1;
-      max-width: 570px;
       color: white;
-      position: relative;
       z-index: 2;
+      max-width: 560px;
     }
-
-.hero-image{
-
-    flex:1.25;
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    position:relative;
-    overflow:hidden;
-
-}
-
-.hero-image::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  pointer-events: none;
-  background:
-    linear-gradient(to right, #06162d 0%, rgba(6,22,45,0.75) 8%, rgba(6,22,45,0) 22%),
-    linear-gradient(to bottom, rgba(6,22,45,0.65) 0%, rgba(6,22,45,0) 18%),
-    linear-gradient(to left, rgba(232,234,237,0.9) 0%, rgba(232,234,237,0) 14%),
-    linear-gradient(to top, rgba(232,234,237,0.9) 0%, rgba(232,234,237,0) 16%);
-.hero-image img{
-
-    width:100%;
-    max-width:950px;
-    height:auto;
-    display:block;
-
-    filter:
-        drop-shadow(0 25px 45px rgba(0,0,0,.35));
-
-    mask-image:
-        radial-gradient(
-            ellipse 95% 90% at center,
-            #000 68%,
-            rgba(0,0,0,.95) 76%,
-            rgba(0,0,0,.55) 88%,
-            transparent 100%
-        );
-
-    -webkit-mask-image:
-        radial-gradient(
-            ellipse 95% 90% at center,
-            #000 68%,
-            rgba(0,0,0,.95) 76%,
-            rgba(0,0,0,.55) 88%,
-            transparent 100%
-        );
-
-}
-    display:block;
-
-    filter: drop-shadow(0 25px 50px rgba(0,0,0,.35));
-
-    -webkit-mask-image: radial-gradient(circle at center,
-        black 62%,
-        rgba(0,0,0,.95) 72%,
-        rgba(0,0,0,.55) 86%,
-        transparent 100%);
-
-    mask-image: radial-gradient(circle at center,
-        black 62%,
-        rgba(0,0,0,.95) 72%,
-        rgba(0,0,0,.55) 86%,
-        transparent 100%);
-}
 
     .tag {
       display: inline-block;
@@ -164,16 +94,15 @@
       color: white;
       font-weight: 800;
       font-size: 15px;
-      padding: 11px 20px;
-      border-radius: 25px;
-      margin-bottom: 30px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      margin-bottom: 28px;
     }
 
     .hero h1 {
       font-size: 58px;
-      line-height: 1.05;
-      margin-bottom: 24px;
-      color: white;
+      line-height: 1.08;
+      margin-bottom: 22px;
     }
 
     .hero h1 span {
@@ -182,34 +111,63 @@
 
     .hero p {
       font-size: 20px;
-      line-height: 1.6;
+      line-height: 1.55;
       margin-bottom: 32px;
-      color: white;
     }
 
     .hero-icons {
       display: flex;
-      gap: 25px;
+      gap: 22px;
       align-items: center;
-      margin: 38px 0;
       flex-wrap: wrap;
+      margin-bottom: 34px;
     }
 
     .hero-badge {
-      width: 165px;
+      width: 160px;
       height: auto;
+      display: block;
       object-fit: contain;
-      transition: 0.3s;
-    }
-
-    .hero-badge:hover {
-      transform: scale(1.05);
     }
 
     .secure {
+      color: white;
       margin-top: 18px;
       font-size: 15px;
-      color: white;
+    }
+
+    .hero-image {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      overflow: hidden;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 980px;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      filter: drop-shadow(0 25px 45px rgba(0,0,0,.35));
+
+      -webkit-mask-image: radial-gradient(
+        ellipse 78% 72% at center,
+        black 58%,
+        rgba(0,0,0,.85) 72%,
+        rgba(0,0,0,.45) 84%,
+        transparent 100%
+      );
+
+      mask-image: radial-gradient(
+        ellipse 78% 72% at center,
+        black 58%,
+        rgba(0,0,0,.85) 72%,
+        rgba(0,0,0,.45) 84%,
+        transparent 100%
+      );
     }
 
     .benefits {
@@ -222,25 +180,24 @@
 
     .benefit {
       display: flex;
+      gap: 16px;
       align-items: center;
-      gap: 18px;
     }
 
     .benefit img {
-      width: 72px;
-      height: 72px;
+      width: 68px;
+      height: 68px;
       object-fit: contain;
     }
 
     .benefit h3 {
-      font-size: 18px;
-      margin-bottom: 7px;
-      color: #07152f;
+      font-size: 17px;
+      margin-bottom: 6px;
     }
 
     .benefit p {
-      font-size: 15px;
       color: #4b5563;
+      font-size: 14px;
     }
 
     section {
@@ -251,13 +208,12 @@
       text-align: center;
       font-size: 34px;
       margin-bottom: 42px;
-      color: #07152f;
     }
 
     .steps {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 25px;
+      gap: 24px;
     }
 
     .step {
@@ -267,7 +223,7 @@
       padding: 35px 18px 28px;
       text-align: center;
       position: relative;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+      box-shadow: 0 8px 25px rgba(0,0,0,.05);
     }
 
     .number {
@@ -300,8 +256,8 @@
 
     .step p {
       font-size: 15px;
-      line-height: 1.5;
       color: #4b5563;
+      line-height: 1.5;
     }
 
     .cases {
@@ -314,7 +270,7 @@
       background: white;
       border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.09);
+      box-shadow: 0 8px 25px rgba(0,0,0,.09);
       text-align: center;
     }
 
@@ -398,25 +354,27 @@
     }
 
     .footer img {
-      width: 95px;
+      width: 90px;
       height: auto;
-      object-fit: contain;
     }
 
     @media (max-width: 950px) {
+      .header {
+        height: auto;
+        padding: 18px 5%;
+      }
+
       .nav {
         display: none;
       }
 
       .logo {
-        width: 120px;
+        width: 105px;
       }
 
       .hero {
-        flex-direction: column;
-        min-height: auto;
-        padding: 55px 5%;
-        text-align: left;
+        grid-template-columns: 1fr;
+        padding: 50px 5%;
         background: linear-gradient(
           180deg,
           #06162d 0%,
@@ -437,8 +395,8 @@
         width: 145px;
       }
 
-      .hero-image img {
-        max-width: 100%;
+      .hero-image {
+        margin-top: 30px;
       }
 
       .benefits,
@@ -470,9 +428,7 @@
       <a href="#contacto">Contacto</a>
     </nav>
 
-    <a class="btn-whatsapp" href="https://wa.me/51920643518" target="_blank">
-      WhatsApp
-    </a>
+    <a class="btn-whatsapp" href="https://wa.me/51920643518" target="_blank">WhatsApp</a>
   </header>
 
   <section class="hero">
@@ -490,9 +446,9 @@
       </p>
 
       <div class="hero-icons">
-        <img src="diagnóstico en menos de 24 horas.png" class="hero-badge" alt="Diagnóstico en menos de 24 horas">
-        <img src="video de kla falla antes de reparar.png" class="hero-badge" alt="Video de la falla antes de reparar">
-        <img src="garantía por escrito.png" class="hero-badge" alt="Garantía por escrito">
+        <img src="diagnóstico en menos de 24 horas.png" class="hero-badge" alt="">
+        <img src="video de kla falla antes de reparar.png" class="hero-badge" alt="">
+        <img src="garantía por escrito.png" class="hero-badge" alt="">
       </div>
 
       <a class="btn-whatsapp" href="https://wa.me/51920643518" target="_blank">
@@ -501,9 +457,10 @@
 
       <div class="secure">🔒 Atención rápida y segura por WhatsApp</div>
     </div>
-<div class="hero-image">
-    <img src="./IMAGENDELAPTOP.png?v=2" alt="Reparación de laptop RTV">
-</div>
+
+    <div class="hero-image">
+      <img src="IMAGENDELAPTOP.png" alt="Reparación de laptop RTV">
+    </div>
   </section>
 
   <section class="benefits" id="servicios">
