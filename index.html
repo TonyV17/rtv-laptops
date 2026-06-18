@@ -144,30 +144,61 @@
       justify-content: flex-end;
       overflow: hidden;
     }
+.hero-image::after {
 
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+        radial-gradient(
+            ellipse 120% 120% at center,
+            transparent 45%,
+            rgba(255,255,255,.03) 58%,
+            rgba(255,255,255,.10) 68%,
+            rgba(210,215,222,.25) 78%,
+            rgba(210,215,222,.55) 88%,
+            rgba(210,215,222,.90) 100%
+        );
+
+}
 .hero-image img {
-  width: 100%;
-  max-width: 980px;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  filter: drop-shadow(0 25px 45px rgba(0,0,0,.35));
 
-  -webkit-mask-image: radial-gradient(
-    ellipse 80% 75% at center,
-    black 52%,
-    rgba(0,0,0,.85) 68%,
-    rgba(0,0,0,.45) 82%,
-    transparent 100%
-  );
+    width: 100%;
+    max-width: 980px;
+    height: auto;
+    display: block;
+    object-fit: contain;
 
-  mask-image: radial-gradient(
-    ellipse 80% 75% at center,
-    black 52%,
-    rgba(0,0,0,.85) 68%,
-    rgba(0,0,0,.45) 82%,
-    transparent 100%
-  );
+    filter: drop-shadow(0 30px 55px rgba(0,0,0,.40));
+
+    -webkit-mask-image:
+        radial-gradient(
+            ellipse 95% 90% at center,
+            rgba(0,0,0,1) 35%,
+            rgba(0,0,0,.98) 48%,
+            rgba(0,0,0,.90) 58%,
+            rgba(0,0,0,.70) 68%,
+            rgba(0,0,0,.40) 78%,
+            rgba(0,0,0,.15) 88%,
+            transparent 100%
+        );
+  
+    mask-image:
+        radial-gradient(
+            ellipse 95% 90% at center,
+            rgba(0,0,0,1) 35%,
+            rgba(0,0,0,.98) 48%,
+            rgba(0,0,0,.90) 58%,
+            rgba(0,0,0,.70) 68%,
+            rgba(0,0,0,.40) 78%,
+            rgba(0,0,0,.15) 88%,
+            transparent 100%
+        );
 }
 
     .benefits {
