@@ -145,27 +145,22 @@
       overflow: hidden;
     }
 .hero-image::after {
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    pointer-events:none;
-
-    background:
-        radial-gradient(
-            ellipse 120% 120% at center,
-            transparent 45%,
-            rgba(255,255,255,.03) 58%,
-            rgba(255,255,255,.10) 68%,
-            rgba(210,215,222,.25) 78%,
-            rgba(210,215,222,.55) 88%,
-            rgba(210,215,222,.90) 100%
-        );
-
-}
+background:
+    linear-gradient(
+        to left,
+        rgba(255,255,255,0.95) 0%,
+        rgba(255,255,255,0.70) 10%,
+        rgba(255,255,255,0.35) 22%,
+        rgba(255,255,255,0.10) 35%,
+        transparent 55%
+    ),
+    radial-gradient(
+        ellipse at right center,
+        rgba(255,255,255,0.65) 0%,
+        rgba(255,255,255,0.30) 25%,
+        rgba(255,255,255,0.08) 50%,
+        transparent 75%
+    );
 .hero-image img {
 
     width: 100%;
