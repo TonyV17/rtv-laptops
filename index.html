@@ -27,6 +27,10 @@
       text-decoration: none;
     }
 
+    /* =========================
+       NO MODIFICADO: HEADER
+    ========================= */
+
     .header {
       height: 95px;
       background: #06162d;
@@ -65,6 +69,10 @@
       justify-content: center;
       box-shadow: 0 10px 25px rgba(34,197,94,.35);
     }
+
+    /* =========================
+       NO MODIFICADO: HERO AZUL
+    ========================= */
 
     .hero {
       min-height: 720px;
@@ -170,191 +178,235 @@
       );
     }
 
-    .benefits {
-      padding: 45px 5%;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 28px;
-      background: white;
-    }
-
-    .benefit {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-    }
-
-    .benefit img {
-      width: 68px;
-      height: 68px;
-      object-fit: contain;
-    }
-
-    .benefit h3 {
-      font-size: 17px;
-      margin-bottom: 6px;
-    }
-
-    .benefit p {
-      color: #4b5563;
-      font-size: 14px;
-    }
+    /* =========================
+       DESDE AQUÍ SÍ MODIFICADO
+    ========================= */
 
     section {
-      padding: 45px 5%;
+      padding: 34px 5%;
     }
 
     .section-title {
       text-align: center;
-      font-size: 34px;
-      margin-bottom: 42px;
+      font-size: 28px;
+      margin-bottom: 28px;
+      color: #07152f;
+    }
+
+    .benefits {
+      padding: 28px 5%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      background: #ffffff;
+      box-shadow: 0 -10px 30px rgba(0,0,0,.04);
+    }
+
+    .benefit {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      background: #f8fbff;
+      border: 1px solid #e8eef8;
+      border-radius: 14px;
+      padding: 16px;
+      min-height: 95px;
+    }
+
+    .benefit img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .benefit h3 {
+      font-size: 15px;
+      margin-bottom: 4px;
+      line-height: 1.2;
+    }
+
+    .benefit p {
+      color: #4b5563;
+      font-size: 13px;
+      line-height: 1.35;
     }
 
     .steps {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 24px;
+      gap: 16px;
     }
 
     .step {
-      background: white;
+      background: #ffffff;
       border: 1px solid #e5eaf3;
       border-radius: 14px;
-      padding: 35px 18px 28px;
+      padding: 30px 14px 22px;
       text-align: center;
       position: relative;
-      box-shadow: 0 8px 25px rgba(0,0,0,.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,.05);
+      min-height: 230px;
     }
 
     .number {
       position: absolute;
-      top: -17px;
+      top: -14px;
       left: 50%;
       transform: translateX(-50%);
-      width: 35px;
-      height: 35px;
+      width: 30px;
+      height: 30px;
       background: #0b73ff;
-      color: white;
+      color: #ffffff;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 800;
+      font-size: 14px;
     }
 
     .step img {
-      width: 70px;
-      height: 70px;
+      width: 54px;
+      height: 54px;
       object-fit: contain;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
     }
 
     .step h3 {
-      font-size: 17px;
-      margin-bottom: 12px;
+      font-size: 15px;
+      margin-bottom: 9px;
+      line-height: 1.25;
     }
 
     .step p {
-      font-size: 15px;
+      font-size: 13px;
       color: #4b5563;
-      line-height: 1.5;
+      line-height: 1.45;
     }
 
     .cases {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 25px;
+      gap: 18px;
     }
 
     .case {
-      background: white;
+      background: #ffffff;
       border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 8px 25px rgba(0,0,0,.09);
+      box-shadow: 0 8px 22px rgba(0,0,0,.08);
       text-align: center;
+      border: 1px solid #eef2f8;
     }
 
     .case img {
       width: 100%;
-      height: 160px;
+      height: 135px;
       object-fit: cover;
       display: block;
     }
 
     .case h3 {
-      font-size: 18px;
-      padding: 17px 10px 8px;
+      font-size: 15px;
+      padding: 13px 8px 6px;
     }
 
     .case small {
       display: flex;
       justify-content: space-around;
       color: #6b7280;
-      padding-bottom: 18px;
+      padding: 0 12px 14px;
+      font-size: 12px;
+    }
+
+    .view-more {
+      text-align: center;
+      margin-top: 22px;
+    }
+
+    .view-more a {
+      color: #0b73ff;
+      font-weight: 800;
+      font-size: 14px;
     }
 
     .trust {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 25px;
+      gap: 18px;
       background: #f8fbff;
       border-radius: 18px;
-      padding: 38px;
+      padding: 28px;
     }
 
     .trust-item {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 12px;
     }
 
     .trust-item img {
-      width: 70px;
-      height: 70px;
+      width: 48px;
+      height: 48px;
       object-fit: contain;
+      flex-shrink: 0;
     }
 
     .trust-item h3 {
-      font-size: 17px;
-      margin-bottom: 6px;
+      font-size: 15px;
+      margin-bottom: 5px;
+      line-height: 1.2;
     }
 
     .trust-item p {
-      font-size: 15px;
+      font-size: 13px;
       color: #4b5563;
-      line-height: 1.4;
+      line-height: 1.35;
     }
 
     .cta {
       background: #06162d;
-      color: white;
+      color: #ffffff;
       text-align: center;
-      padding: 60px 5%;
+      padding: 44px 5%;
+      position: relative;
+      overflow: hidden;
     }
 
     .cta h2 {
-      font-size: 38px;
-      margin-bottom: 12px;
+      font-size: 32px;
+      margin-bottom: 10px;
     }
 
     .cta p {
-      font-size: 18px;
-      margin-bottom: 28px;
+      font-size: 17px;
+      margin-bottom: 24px;
+    }
+
+    .cta .btn-whatsapp {
+      min-width: 360px;
+    }
+
+    .clients {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #e5e7eb;
     }
 
     .footer {
       background: #111827;
       color: white;
-      padding: 22px 5%;
+      padding: 18px 5%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 20px;
-      font-size: 14px;
+      font-size: 13px;
     }
 
     .footer img {
-      width: 90px;
+      width: 80px;
       height: auto;
     }
 
@@ -406,6 +458,21 @@
         grid-template-columns: 1fr;
       }
 
+      .benefit,
+      .step,
+      .trust-item {
+        min-height: auto;
+      }
+
+      .case img {
+        height: 210px;
+      }
+
+      .cta .btn-whatsapp {
+        min-width: auto;
+        width: 100%;
+      }
+
       .footer {
         flex-direction: column;
         text-align: center;
@@ -446,9 +513,9 @@
       </p>
 
       <div class="hero-icons">
-        <img src="diagnóstico en menos de 24 horas.png" class="hero-badge" alt="">
-        <img src="video de kla falla antes de reparar.png" class="hero-badge" alt="">
-        <img src="garantía por escrito.png" class="hero-badge" alt="">
+        <img src="diagnóstico en menos de 24 horas.png" class="hero-badge" alt="Diagnóstico en menos de 24 horas">
+        <img src="video de kla falla antes de reparar.png" class="hero-badge" alt="Video de la falla antes de reparar">
+        <img src="garantía por escrito.png" class="hero-badge" alt="Garantía por escrito">
       </div>
 
       <a class="btn-whatsapp" href="https://wa.me/51920643518" target="_blank">
@@ -465,7 +532,7 @@
 
   <section class="benefits" id="servicios">
     <div class="benefit">
-      <img src="recogo y entrega a domicilio.png" alt="">
+      <img src="recojo y entrega a domicilio.png" alt="Recojo y entrega a domicilio">
       <div>
         <h3>Recojo y entrega a domicilio</h3>
         <p>En Lima Metropolitana</p>
@@ -473,7 +540,7 @@
     </div>
 
     <div class="benefit">
-      <img src="comunicación clara.png" alt="">
+      <img src="comunicación clara.png" alt="Comunicación clara">
       <div>
         <h3>Comunicación clara</h3>
         <p>Te mantenemos informado en todo el proceso</p>
@@ -481,7 +548,7 @@
     </div>
 
     <div class="benefit">
-      <img src="presupuesto previo.png" alt="">
+      <img src="presupuesto previo.png" alt="Presupuesto previo">
       <div>
         <h3>Presupuesto previo</h3>
         <p>Sin sorpresas, tú decides antes de reparar</p>
@@ -489,7 +556,7 @@
     </div>
 
     <div class="benefit">
-      <img src="tecnicos especializados.png" alt="">
+      <img src="tecnicos especializados.png" alt="Técnicos especializados">
       <div>
         <h3>Técnicos especializados</h3>
         <p>Más de 8 años de experiencia</p>
@@ -503,35 +570,35 @@
     <div class="steps">
       <div class="step">
         <div class="number">1</div>
-        <img src="escríbenos.png" alt="">
+        <img src="escríbenos.png" alt="Escríbenos por WhatsApp">
         <h3>Escríbenos</h3>
-        <p>Cuéntanos qué le pasa a tu laptop y coordinamos la recogida.</p>
+        <p>Contáctanos por WhatsApp y cuéntanos el problema de tu laptop.</p>
       </div>
 
       <div class="step">
         <div class="number">2</div>
-        <img src="recojo o recepción.png" alt="">
+        <img src="recojo o recepción.png" alt="Recojo o recepción">
         <h3>Recojo o recepción</h3>
         <p>Recogemos tu laptop o la recibimos en nuestro taller de forma segura.</p>
       </div>
 
       <div class="step">
         <div class="number">3</div>
-        <img src="diagnóstico en video.png" alt="">
+        <img src="diagnóstico en video.png" alt="Diagnóstico en video">
         <h3>Diagnóstico en video</h3>
-        <p>Te enviamos un video con la falla encontrada y el presupuesto.</p>
+        <p>En menos de 24 horas te enviamos un video con la falla encontrada.</p>
       </div>
 
       <div class="step">
         <div class="number">4</div>
-        <img src="apruebas o rechazas.png" alt="">
+        <img src="apruebas o rechazas.png" alt="Apruebas o rechazas">
         <h3>Apruebas o rechazas</h3>
         <p>Tú decides si deseas continuar con la reparación sin compromiso.</p>
       </div>
 
       <div class="step">
         <div class="number">5</div>
-        <img src="reparacion y entrega.png" alt="">
+        <img src="reparacion y entrega.png" alt="Reparación y entrega">
         <h3>Reparación y entrega</h3>
         <p>Reparamos tu laptop y te la entregamos con garantía por escrito.</p>
       </div>
@@ -543,28 +610,32 @@
 
     <div class="cases">
       <div class="case">
-        <img src="cambio de pantalla.png" alt="">
+        <img src="cambio de pantalla.png" alt="Cambio de pantalla de laptop">
         <h3>Cambio de pantalla</h3>
         <small><span>Antes</span><span>Después</span></small>
       </div>
 
       <div class="case">
-        <img src="reparación de la placa.png" alt="">
+        <img src="reparación de la placa.png" alt="Reparación de placa de laptop">
         <h3>Reparación de placa</h3>
         <small><span>Antes</span><span>Después</span></small>
       </div>
 
       <div class="case">
-        <img src="cambio de teclado.png" alt="">
+        <img src="cambio de teclado.png" alt="Cambio de teclado de laptop">
         <h3>Cambio de teclado</h3>
         <small><span>Antes</span><span>Después</span></small>
       </div>
 
       <div class="case">
-        <img src="recuperación de sistema.png" alt="">
+        <img src="recuperación de sistema.png" alt="Recuperación de sistema de laptop">
         <h3>Recuperación de sistema</h3>
         <small><span>Antes</span><span>Después</span></small>
       </div>
+    </div>
+
+    <div class="view-more">
+      <a href="https://wa.me/51920643518" target="_blank">Ver más casos →</a>
     </div>
   </section>
 
@@ -573,7 +644,7 @@
 
     <div class="trust">
       <div class="trust-item">
-        <img src="diagnóstico transparente.png" alt="">
+        <img src="diagnóstico transparente.png" alt="Diagnóstico transparente">
         <div>
           <h3>Diagnóstico transparente</h3>
           <p>Te mostramos en video la falla real de tu equipo.</p>
@@ -581,7 +652,7 @@
       </div>
 
       <div class="trust-item">
-        <img src="sin reparaciones no autorizadas.png" alt="">
+        <img src="sin reparaciones no autorizadas.png" alt="Sin reparaciones no autorizadas">
         <div>
           <h3>Sin reparaciones no autorizadas</h3>
           <p>Solo reparamos lo que tú apruebas.</p>
@@ -589,7 +660,7 @@
       </div>
 
       <div class="trust-item">
-        <img src="garantía por escrito.png" alt="">
+        <img src="garantía por escrito.png" alt="Garantía por escrito">
         <div>
           <h3>Garantía por escrito</h3>
           <p>Todas nuestras reparaciones incluyen garantía.</p>
@@ -597,7 +668,7 @@
       </div>
 
       <div class="trust-item">
-        <img src="atención personalizada.png" alt="">
+        <img src="atención personalizada.png" alt="Atención personalizada">
         <div>
           <h3>Atención personalizada</h3>
           <p>Te acompañamos durante todo el proceso.</p>
@@ -613,11 +684,12 @@
     <a class="btn-whatsapp" href="https://wa.me/51920643518" target="_blank">
       Solicitar Diagnóstico por WhatsApp →
     </a>
+
+    <div class="clients">👨‍💻👩‍💻👨‍🔧 +200 clientes satisfechos</div>
   </section>
 
   <footer class="footer">
-    <img src="LOGO RTV.png" alt="RTV">
-    <p>© 2024 RTV Servicios Electrónicos</p>
+    <p>RTV Laptops © 2024</p>
     <p>📍 Lima Metropolitana</p>
     <p>🕒 Atención: Lunes a Sábado 9:00 am - 7:00 pm</p>
     <p>Política de privacidad</p>
@@ -625,5 +697,3 @@
 
 </body>
 </html>
-
-
